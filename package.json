@@ -1,0 +1,21 @@
+{
+  "name": "redux-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test-dot": "node ./tests/tests.test.js | tap-dot; true",
+    "test-faucet": "node ./tests/tests.test.js | faucet; true",
+    "test-diff": "node ./tests/tests.test.js | tap-diff; true",
+    "test": "npm run test-diff"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tap-diff": "^0.1.1",
+    "tap-dot": "^1.0.5",
+    "tape": "^4.6.3",
+    "webpack": "^2.3.3"
+  }
+}

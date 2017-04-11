@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GottaMotto Shirts</title>
+  </head>
+  <body>
+    <!-- banner -->
+    <div class="banner">
+    	<header class="" role="banner">
+    		<div class="header__logo">
+    			<img src="#" alt="gottamotto logo">
+    		</div>
+    		<nav class="header__nav" role="navigation">
+    			<ul>
+            <li><a id="shop" href="#">Shop</a></li>
+            <li><a id="contact-us" href="#">Contact Us</a></li>
+            <li><a id="about" href="#">About</a></li>
+    			</ul>
+    		</nav>
+    	</header>
+    	<div class="banner-content">
+    		<div class="banner-content__heading">
+          <h1>GottaMotto Shirts</h1>
+    			<h2>"If you've gotta' motto, we've got a shirt for it!"</h2>
+    		</div>
+        <div>
+    		<a href="#"><img src="#" alt="down-arrow"></a>
+        </div>
+    	</div>
+    </div>
+    <main>
+
+      <!-- product display -->
+      <div class="product-display">
+        <h3>Our Shirt Selection</h3>
+        <div class="display-container">
+          <div class="output-container">
+            <p>DISPLAY SHIRT INVENTORY</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- product selection -->
+      <div>
+        <label for="product">Product: </label>
+        <select class="options" name="type">
+          <option value="shirt">shirt</option>
+        </select>
+      </div>
+      <div>
+      <label for="color">Color: </label>
+      <select class="options" name"color">
+        <option value="red">red</option>
+        <option value="orange">orange</option>
+        <option value="yellow">yellow</option>
+        <option value="green">green</option>
+        <option value="blue">blue</option>
+        <option value="purple">purple</option>
+        <option value="white">white</option>
+        <option value="black">black</option>
+        <option value="pink">pink</option>
+        <option value="gray">gray</option>
+      </select>
+      </div>
+      <div>
+      <label for="size">Size: </label>
+        <select class="options" name"size">
+          <option value="x-small">x-small</option>
+          <option value="small">small</option>
+          <option value="large">large</option>
+          <option value="medium">medium</option>
+          <option value="x-large">x-large</option>
+        </select>
+      </div>
+      <div>
+      <label for="motto">Enter the motto to be displayed on your shirt (limit 50 characters)</label>
+      <input id"motto-input" class="options motto-input" maxlength="50" minlength="1" type="text" name="motto" placeholder=" enter your text here"></input>
+      <input id="submit" class="options button" name="submit" type="submit" value="Submit" />
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div id="about" class="footer-content">
+          <p>About 'GottaMotto Shirts'</p>
+        </div>
+        <div id="contact-us" class="footer-content">
+          <p>Contact Us</p>
+        </div>
+        <div id="social-media" class="footer-content">
+          <img src="#" alt="facebook">
+          <img src="#" alt="twitter">
+        </div>
+      </div>
+      <div class="thin-footer">
+        <p>&copy; 2017 Gotta Motto Shirts</p>
+      </div>
+    </footer>
+    <script type="text/javascript" src="./dist/bundle.js"></script>
+  </body>
+</html>
