@@ -1,7 +1,6 @@
 const test = require('tape')
 const reducer = require('../app/reducer.js')
 
-//test 1
 test('SHIRT@ADD: add red sm to an empty state', t => {
   const startingState = [];
   const action = {
@@ -20,7 +19,6 @@ test('SHIRT@ADD: add red sm to an empty state', t => {
   t.end()
 });
 
-//test2
 test('SHIRT@ADD: add green sm to an empty state', t => {
   const startingState = [];
   const action = {
@@ -39,7 +37,6 @@ test('SHIRT@ADD: add green sm to an empty state', t => {
   t.end()
 });
 
-//test3
 test('SHIRT@ADD: add a second red sm to a state with one red sm', (t) => {
   const starting = [{
     id: 1,
@@ -68,7 +65,6 @@ test('SHIRT@ADD: add a second red sm to a state with one red sm', (t) => {
   t.end()
 });
 
-//test 4
 test('SHIRT@ADD: add red sm to a state with two shirts', (t) => {
   const startingState = [{
     id: 2,
@@ -102,6 +98,45 @@ test('SHIRT@ADD: add red sm to a state with two shirts', (t) => {
     color: 'red',
     size: 'sm',
     motto: 'Real programmers count from 0.'
+  }]
+  t.deepEqual(reducer(startingState, action), expected)
+  t.end()
+})
+
+test('SHIRT@REMOVE: remove id 8 to a state with two shirts', (t) => {
+  const startingState = [{
+    id: 2,
+    color: 'red',
+    size: 'sm',
+    motto: 'Keep calm and code on!'
+  }, {
+    id: 7,
+    color: 'white',
+    size: 'lg',
+    motto: 'Keep calm and code on!'
+  }, {
+    id: 8,
+    color: 'red',
+    size: 'sm',
+    motto: 'Real programmers count from 0.'
+  }]
+  const action = {
+    type: 'SHIRT@REMOVE',
+    id: 8,
+    color: 'red',
+    size: 'sm',
+    motto: 'Real programmers count from 0.'
+  }
+  const expected = [{
+    id: 2,
+    color: 'red',
+    size: 'sm',
+    motto: 'Keep calm and code on!'
+  }, {
+    id: 7,
+    color: 'white',
+    size: 'lg',
+    motto: 'Keep calm and code on!'
   }]
   t.deepEqual(reducer(startingState, action), expected)
   t.end()

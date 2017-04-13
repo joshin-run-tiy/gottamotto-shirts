@@ -1,0 +1,23 @@
+# Redux Subscribe
+
+- Subscribe to a path in your redux state atom
+
+- redux-subscribe is a modular primitive to providing a context-like abstraction in a component framework. It gives you the ability to dispatch an action in response to the change of a path in your global state atom. This allows you to create a `Context` component which will dispatch an action that updates its own local state in response to a change in the global state atom. The context component may then pass down that piece of state to its children, e.g.
+
+- - [`getState()`](#getState)
+- [`dispatch(action)`](#dispatch)
+- [`subscribe(listener)`](#subscribe)
+- [`replaceReducer(nextReducer)`](#replaceReducer)
+
+### store.subscribe()
+- render something to the body of the html
+- lets you register a call back any time an action has been dispatched. so that you can update the UI of your application to reflect the current application state.
+
+- It gives you the ability to dispatch an action in response to the change of a path in your global state atom. This allows you to create a Context component which will dispatch an action that updates its own local state in response to a change in the global state atom. The context component may then pass down that piece of state to its children, e.g.
+
+#### react
+- React is a UI library. It should only deal with rendering the UI given a
+particular set of data. If the data changes, it should re-render to form
+a new UI.
+- instead of updating the whole page, refreshing
+- manage a slice...

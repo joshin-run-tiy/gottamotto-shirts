@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test-dot": "node ./tests/tests.test.js | tap-dot; true",
-    "test-faucet": "node ./tests/tests.test.js | faucet; true",
-    "test-diff": "node ./tests/tests.test.js | tap-diff; true",
+    "test-dot": "node ./tests/reducer.test.js | tap-dot; true",
+    "test-faucet": "node ./tests/reducer.test.js | faucet; true",
+    "test-diff": "node ./tests/reducer.test.js | tap-diff; true",
     "test": "npm run test-diff"
   },
   "author": "",
@@ -17,5 +17,8 @@
     "tap-dot": "^1.0.5",
     "tape": "^4.6.3",
     "webpack": "^2.3.3"
+  },
+  "dependencies": {
+    "redux": "^3.6.0"
   }
 }

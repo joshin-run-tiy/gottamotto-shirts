@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>GottaMotto Shirts</title>
+  <!--  Table/CreateShirt/RemoveShirt  -->
   </head>
   <body>
     <!-- banner -->
@@ -23,16 +24,14 @@
     	<div class="banner-content">
     		<div class="banner-content__heading">
           <h1>GottaMotto Shirts</h1>
-    			<h2>"If you've gotta' motto, we've got a shirt for it!"</h2>
+    			<h2>"If you've gotta' motto, we'll make a shirt for it!"</h2>
+          <div>
+      		<a href="#"><img src="#" alt="down-arrow"></a>
+          </div>
     		</div>
-        <div>
-    		<a href="#"><img src="#" alt="down-arrow"></a>
-        </div>
-    	</div>
+      </div>
     </div>
     <main>
-
-      <!-- product display -->
       <div class="product-display">
         <h3>Our Shirt Selection</h3>
         <div class="display-container">
@@ -41,22 +40,24 @@
           </div>
         </div>
       </div>
-
-      <!-- product selection -->
+      <div>
+        <h3>Go ahead. Create your shirt.</h3>
+      </div>
       <div>
         <label for="product">Product: </label>
         <select class="options" name="type">
           <option value="shirt">shirt</option>
         </select>
       </div>
-      <div>
+      <div>t
+
       <label for="color">Color: </label>
       <select class="options" name"color">
         <option value="red">red</option>
         <option value="orange">orange</option>
         <option value="yellow">yellow</option>
         <option value="green">green</option>
-        <option value="blue">blue</option>
+        <option value="blue" selected>blue</option>
         <option value="purple">purple</option>
         <option value="white">white</option>
         <option value="black">black</option>
@@ -69,7 +70,7 @@
         <select class="options" name"size">
           <option value="x-small">x-small</option>
           <option value="small">small</option>
-          <option value="large">large</option>
+          <option value="large" selected>large</option>
           <option value="medium">medium</option>
           <option value="x-large">x-large</option>
         </select>
