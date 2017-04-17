@@ -1,4 +1,4 @@
-module.exports = function reducter(state, action) {
+module.exports = function reducer(state = [], action = {}) {
   switch (action.type) {
     case 'SHIRT@ADD':
       return [

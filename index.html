@@ -31,7 +31,7 @@
     		</div>
       </div>
     </div>
-    <main>
+
       <div class="product-display">
         <h3>Our Shirt Selection</h3>
         <div class="display-container">
@@ -40,19 +40,11 @@
           </div>
         </div>
       </div>
-      <div>
-        <h3>Go ahead. Create your shirt.</h3>
-      </div>
-      <div>
-        <label for="product">Product: </label>
-        <select class="options" name="type">
-          <option value="shirt">shirt</option>
-        </select>
-      </div>
-      <div>t
 
+        <h3>Go ahead. Create your shirt.</h3>
+    <div id="createShirt">
       <label for="color">Color: </label>
-      <select class="options" name"color">
+      <select id="color" class="options" name"color">
         <option value="red">red</option>
         <option value="orange">orange</option>
         <option value="yellow">yellow</option>
@@ -64,22 +56,32 @@
         <option value="pink">pink</option>
         <option value="gray">gray</option>
       </select>
-      </div>
-      <div>
+
+
       <label for="size">Size: </label>
-        <select class="options" name"size">
+        <select id="size" class="options" name"size">
           <option value="x-small">x-small</option>
           <option value="small">small</option>
           <option value="large" selected>large</option>
           <option value="medium">medium</option>
           <option value="x-large">x-large</option>
         </select>
+
+
+        <label for="motto">Enter the motto to be displayed on your shirt (limit 50 characters):</label>
+        <input id="motto" class="options motto-input" maxlength="50" minlength="1" type="text" name="motto" placeholder=" enter your text here"></input>
+        <input id="createButton" class="options button" name="submit" type="submit" value="Create new shirt entry" />
       </div>
-      <div>
-      <label for="motto">Enter the motto to be displayed on your shirt (limit 50 characters)</label>
-      <input id"motto-input" class="options motto-input" maxlength="50" minlength="1" type="text" name="motto" placeholder=" enter your text here"></input>
-      <input id="submit" class="options button" name="submit" type="submit" value="Submit" />
-    </main>
+      <div id="removeShirt">
+        <label for="id">Enter ID to be removed:</label>
+
+
+        <input id="id" class="options" maxlength="3" minlength="1" type="text" name="id" placeholder=" enter your text here"></input>
+
+        <input id="removeButton" class="options button" name="submit" type="submit" value="Remove shirt entry" />
+
+
+      </div>
     <footer>
       <div class="footer-content">
         <div id="about" class="footer-content">
@@ -94,7 +96,7 @@
         </div>
       </div>
       <div class="thin-footer">
-        <p>&copy; 2017 Gotta Motto Shirts</p>
+        <p>&copy; 2017 GottaMotto Shirts</p>
       </div>
     </footer>
     <script type="text/javascript" src="./dist/bundle.js"></script>
